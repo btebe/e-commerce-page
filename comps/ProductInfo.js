@@ -82,11 +82,7 @@ function ProductInfo({ counter, setCounter, handleSumbit }) {
               onClick={() => handleCounter(counter - 1)}
               ref={minusRef}
             >
-              <Image
-                src={minus}
-                alt='minus to decrease amount'
-                priority={true}
-              />
+              <Image src={minus} alt='minus' priority={true} />
             </button>
             <strong>{counter}</strong>
             <button
@@ -95,14 +91,14 @@ function ProductInfo({ counter, setCounter, handleSumbit }) {
               className={itemcount == 1 ? `${styles.active_count}` : ""}
               onClick={() => handleCounter(counter + 1)}
             >
-              <Image src={plus} alt='plus to increase amount' priority={true} />
+              <Image src={plus} alt='plus' priority={true} />
             </button>
           </div>
           <button className={styles.btn} onClick={() => handleSumbit()}>
             <span>
               <Image
                 src={cart}
-                alt='add to cart'
+                alt='submit'
                 height={15}
                 width={15}
                 priority={true}
