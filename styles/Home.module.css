@@ -415,14 +415,20 @@
   /* cart */
 
   .card {
-    top: 70%;
-    right: 0;
-    left: 0;
-    width: 92%;
-    /* height: fit-content; */
+    top: 150%; 
+    left: 50%;
+    transform: translateX(-50%); 
+    width: 96%;
   }
   .card > .card_body {
     padding: 1.5rem;
+  }
+
+  /* badge */
+
+  .badge{
+    top:.5rem;
+    left:6px;
   }
 
   /* cart item */
