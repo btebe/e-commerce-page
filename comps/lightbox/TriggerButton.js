@@ -41,11 +41,23 @@ const Trigger = ({
     <div className='trigger-pic-container'>
       {fireTrigger === true ? (
         <button className='slide-image-btn' ref={buttonRef} onClick={showModal}>
-          <Image src={triggerImg} alt={triggerAlt} height={445} width={445} />
+          <Image
+            src={triggerImg}
+            alt={triggerAlt}
+            height={445}
+            width={445}
+            priority={true}
+          />
         </button>
       ) : (
         <button className='slide-image-btn' tabIndex='-1'>
-          <Image src={triggerImg} alt={triggerAlt} height={445} width={445} />
+          <Image
+            src={triggerImg}
+            alt={triggerAlt}
+            height={445}
+            width={445}
+            priority={true}
+          />
         </button>
       )}
 
@@ -54,14 +66,14 @@ const Trigger = ({
         className='next-btn'
         style={{ zIndex: fireTrigger === true ? "10" : "1000" }}
       >
-        <Image src={nextbtn} alt='next' height={10} width={8} />
+        <Image src={nextbtn} alt='next' height={10} width={8} priority={true} />
       </button>
       <button
         onClick={handlePrev}
         className='prev-btn'
         style={{ zIndex: fireTrigger === true ? "10" : "1000" }}
       >
-        <Image src={prevbtn} alt='prev' height={10} width={8} />
+        <Image src={prevbtn} alt='prev' height={10} width={8} priority={true} />
       </button>
     </div>
   );

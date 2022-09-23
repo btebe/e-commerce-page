@@ -57,6 +57,7 @@ function Thumbnail({
               alt={item.name}
               height={88}
               width={88}
+              priority={true}
             />
           </li>
         );

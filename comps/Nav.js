@@ -47,7 +47,13 @@ function Nav({
           <span className='sr-only'>Menu</span>
         </button>
         <div className='logo'>
-          <Image src={logo} alt='Logo' width={137} height={20} />
+          <Image
+            src={logo}
+            alt='Logo'
+            width={137}
+            height={20}
+            priority={true}
+          />
         </div>
       </div>
 
@@ -91,7 +97,7 @@ function Nav({
       <ul className={styles.primary_nav_item_two}>
         <li>
           <button onClick={() => setShowCart(!showCart)} role='button'>
-            <Image src={cart} alt='cart' height={20} />
+            <Image src={cart} alt='cart' height={20} priority={true} />
           </button>
           {showCart && (
             <Cart
@@ -109,7 +115,13 @@ function Nav({
         <li>
           <Link href='/'>
             <a>
-              <Image src={avatar} alt='profile' height={50} width={50} />
+              <Image
+                src={avatar}
+                alt='profile'
+                height={50}
+                width={50}
+                priority={true}
+              />
             </a>
           </Link>
         </li>
