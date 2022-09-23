@@ -38,7 +38,6 @@ function Thumbnail({
   };
   return (
     <ul
-      role='region'
       aria-label='thumbnail carousel'
       tabIndex='0'
       onKeyDown={handleKeyDown}
