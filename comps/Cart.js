@@ -55,7 +55,7 @@ function CartItem({
   return (
     <section className={styles.cart_item_container} tabIndex={0} ref={cartRef}>
       <article className={styles.cart_item_body}>
-        <Image src={pic} alt='product' height={50} width={50} />
+        <Image src={pic} alt='product' height={50} width={50} priority={true} />
         <p>Fall Limited Edition Sneakers</p>
         <p>
           $125.000 <span> x {repeat}</span>
@@ -63,7 +63,13 @@ function CartItem({
         </p>
         <button onClick={handleRemove}>
           <span className='sr-only'>delete</span>
-          <Image src={deletebtn} alt='delete item' height={16} width={14} />
+          <Image
+            src={deletebtn}
+            alt='delete item'
+            height={16}
+            width={14}
+            priority={true}
+          />
         </button>
       </article>
       <button
