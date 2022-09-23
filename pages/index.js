@@ -70,6 +70,7 @@ export default function Home() {
         setTotal={setTotal}
         isRemove={isRemove}
         handleRemove={handleRemove}
+        quatity={quatity}
       />
       <main className={`${styles.main} container-main`}>
         <ProductInfo

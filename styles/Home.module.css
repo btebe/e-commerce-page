@@ -28,6 +28,7 @@
 
 
 /* nav */
+
 .primary_header {
   margin-block: 1rem;
   display: grid;
@@ -86,7 +87,7 @@
   border: 2px solid var(--Orange) !important;
 }
 
-.primary_nav_item_two > li:nth-child(1) > button > span:hover {
+.primary_nav_item_two > li:nth-child(1) > button > span:not(.badge):hover {
   filter: brightness(50%);
 }
 .primary_nav_item_two > li:nth-child(1) > button {
@@ -96,6 +97,7 @@
   padding: 0;
   cursor: pointer;
 }
+
 
 /* underline indicators */
 
@@ -166,6 +168,28 @@
   font-weight: var(--fw-700);
 }
 
+/* badge */
+
+.badge {
+  position: relative;
+  background-color: var(--Orange);
+  color: white;
+  padding: 1px 8px;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 12px;
+  /* height: 13px;
+  width: 19px; */
+  text-align: center;
+  border-radius: 6.5px;
+  z-index: 10;
+  top:-1rem;
+  left: 2rem;
+  /* right:-.5rem; */
+  
+
+}
+
 /* cart item */
 
 
@@ -212,7 +236,6 @@
   cursor: pointer;
  
 }
-
 
 
 

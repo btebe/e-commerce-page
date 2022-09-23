@@ -19,6 +19,7 @@ function Nav({
   handleRemove,
   showCart,
   setShowCart,
+  quatity,
 }) {
   const handleBlur = () => {
     if (isTabletOrMobile) setShow(false);
@@ -97,6 +98,7 @@ function Nav({
       <ul className={styles.primary_nav_item_two}>
         <li>
           <button onClick={() => setShowCart(!showCart)} role='button'>
+            {quatity > 0 && <span className={styles.badge}>{quatity}</span>}
             <Image src={cart} alt='cart' height={20} priority={true} />
           </button>
           {showCart && (
